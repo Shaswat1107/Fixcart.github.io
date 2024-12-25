@@ -1,3 +1,4 @@
+
 document.getElementById("bookingForm").addEventListener("submit", function(event) {
     event.preventDefault();  // Prevents the form from submitting the traditional way
     
