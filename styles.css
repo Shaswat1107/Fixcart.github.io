@@ -47,10 +47,21 @@ nav {
 }
 
 .hero {
-    background-color: #0099cc;
-    color: white;
+    position: relative;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    animation: slide 15s infinite;
     text-align: center;
-    padding: 80px 20px;
+}
+
+@keyframes slide {
+    0% { background-image: url('https://img.freepik.com/free-photo/woman-repairer-with-painting-roller-isolated-talking-phone_1303-14247.jpg?t=st=1735105817~exp=1735109417~hmac=04ded3f615eb763540300d49085836add5c6dc2607b107bbab12b8c3f7fc0c0d&w=996'); }
+    20% { background-image: url('https://img.freepik.com/free-photo/young-couple-construction-worker-uniform-cap-holding-paint-roller-surprised-guy-standing-with-closed-posture-excited-girl-making-bunny-ears-guys-head_141793-78856.jpg?t=st=1735106373~exp=1735109973~hmac=6eceea0d383320b2298e599082822dace165d107d0d1ad6eaf9739a3c5ecacca&w=996'); }
+    40% { background-image: url('https://img.freepik.com/free-photo/young-cute-family-repairs-room_1157-24898.jpg?t=st=1735106427~exp=1735110027~hmac=a71d91c8840b3c72010cd1e13b2cb29ca16526149cd2e75de3209c5aa3bd3674&w=996'); }
+    60% { background-image: url('https://img.freepik.com/free-photo/confident-young-caucasian-girl-with-pixie-haircut-holding-hammer-putting-hand-waist-isolated-purple-background-with-copy-space_141793-88249.jpg?t=st=1735106461~exp=1735110061~hmac=ed22adeefca038af7a91695a145a4581125b505f6c8f3a59f81fadff6950d755&w=900'); }
+    80% { background-image: url('https://img.freepik.com/free-vector/character-illustration-home-improvement-concept_53876-66089.jpg?t=st=1735106488~exp=1735110088~hmac=71c8e70c3444e9a7f65e3bba0c2b695f5e318c6aff9dfb745b71f89f2bb129fa&w=900'); }
+    100% { background-image: url('https://img.freepik.com/free-photo/male-female-manual-workers-shrugging-their-shoulders-with-dubious-expressions-knowing-what-begin-their-work-with-young-man-holding-drilling-machine-having-some-doubts-uncertainty_273609-7944.jpg?t=st=1735106527~exp=1735110127~hmac=b194807cd16e83376612490c0cc24c068ed5a55150e6e765c77fc73c90d33efd&w=996'); }
 }
 
 .hero .cta-button {
@@ -188,19 +199,19 @@ footer .footer-contact h4 {
 
 /* WhatsApp Button */
 .whatsapp-button {
+    position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #25D366;
-    padding: 15px;
-    border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     z-index: 1000;
+    background-color: #25D366;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .whatsapp-button img {
     width: 50px;
     height: 50px;
-    vertical-align: middle;
 }
 /* Service Details Page */
 .service-details {
@@ -1039,3 +1050,4 @@ footer {
     text-align: center;
     padding: 20px;
 }
+
